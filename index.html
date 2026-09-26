@@ -146,6 +146,26 @@ h2{font-size:clamp(2rem,4vw,3.3rem);line-height:1.05;letter-spacing:-1.5px}
 .checks{display:grid;gap:12px;margin-top:24px}
 .check{display:flex;gap:11px;align-items:flex-start;color:#c8d5e5}
 .check b{color:var(--good)}
+.founders{margin-top:70px}
+.founders-head{max-width:720px;margin-bottom:32px}
+.founder-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.founder-card{
+  background:linear-gradient(180deg,rgba(16,25,42,.82),rgba(8,13,23,.82));
+  border:1px solid var(--line);border-radius:var(--radius);padding:30px;
+  box-shadow:0 12px 40px rgba(0,0,0,.16);transition:.3s;
+}
+.founder-card:hover{transform:translateY(-5px);border-color:rgba(0,229,255,.35)}
+.founder-top{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+.founder-avatar{
+  width:58px;height:58px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  color:#021017;font-weight:900;font-size:1.1rem;
+}
+.founder-name{font-size:1.1rem;font-weight:800;color:#fff}
+.founder-role{color:var(--accent);font-size:.82rem;font-weight:700;margin-top:3px}
+.founder-title{color:var(--muted);font-size:.85rem;margin-top:2px;line-height:1.5}
+.founder-card p{color:var(--muted);font-size:.92rem;margin-top:10px}
+@media (max-width:760px){.founder-grid{grid-template-columns:1fr}}
 .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
 .stat{padding:26px;border:1px solid var(--line);border-radius:18px;background:rgba(255,255,255,.025)}
 .stat strong{font-size:2rem;display:block;color:#fff}
@@ -261,7 +281,6 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#718399;font-size:.
   <div class="container about-grid">
     <div class="about-copy reveal">
       <div class="kicker">01 — About</div>
-      <h2>Technology with a security-first mindset.</h2>
       <p>
         RD CyberForge is a technology and cybersecurity-focused platform for learning,
         experimentation, practical projects, and digital security.
@@ -282,6 +301,77 @@ footer{padding:30px 0;border-top:1px solid var(--line);color:#718399;font-size:.
       <div class="stat"><strong>24/7</strong><span>Curiosity & learning</span></div>
       <div class="stat"><strong>∞</strong><span>Room to experiment</span></div>
       <div class="stat"><strong>100%</strong><span>Built around practical work</span></div>
+    </div>
+  </div>
+
+  <div class="container founders">
+    <div class="founders-head reveal">
+      <div class="kicker">Who We Are</div>
+      <h2>The people behind RD CyberForge.</h2>
+    </div>
+    <div class="founder-grid">
+      <div class="founder-card reveal">
+        <div class="founder-top">
+          <div class="founder-avatar">DG</div>
+          <div>
+            <div class="founder-name">Devendra Gupta</div>
+            <div class="founder-title">Founder @ RD CyberForge | Cybersecurity Trainer | Aspiring SOC Analyst | Digital Forensics &amp; Incident Response | VAPT | Treasurer @ HHA_SVCE</div>
+          </div>
+        </div>
+        <p>
+          I am a Cybersecurity enthusiast and B-Tech student specializing in Cyber Security,
+          with hands-on experience in Security Operations, Vulnerability Assessment and
+          Penetration Testing (VAPT), Network Security, and Web Application Security.
+        </p>
+        <p>
+          During my cybersecurity internships, I gained practical exposure to reconnaissance,
+          vulnerability assessment, network enumeration, exploitation, OWASP Top 10
+          vulnerabilities, Burp Suite, Nmap, Metasploit, Wireshark, SQLMap, and other security
+          tools. I have also completed major projects involving Network Security Assessment
+          and Web Application Security Assessment.
+        </p>
+        <p>
+          I am currently focused on building my career as a SOC Analyst, developing skills in
+          security monitoring, log analysis, SIEM, incident response, threat detection, and
+          MITRE ATT&amp;CK. I am also interested in Digital Forensics and contributing to
+          cybercrime investigation and law enforcement efforts in the future.
+        </p>
+        <p>
+          I believe in continuous learning through hands-on labs, cybersecurity projects,
+          CTFs, and real-world security scenarios. My goal is to grow as a cybersecurity
+          professional and contribute to building a safer digital environment.
+        </p>
+      </div>
+      <div class="founder-card reveal">
+        <div class="founder-top">
+          <div class="founder-avatar">SR</div>
+          <div>
+            <div class="founder-name">Sagala Rajyalakshmi</div>
+            <div class="founder-title">Co-Founder @ RD CyberForge | B.Tech Cybersecurity Student | Exploring Network Security | Aspiring Cybersecurity Analyst</div>
+          </div>
+        </div>
+        <p>
+          I am Rajyalakshmi, currently pursuing my 3rd year B.Tech in Computer Science
+          Engineering, specializing in Cybersecurity, with a keen interest in Cybersecurity,
+          AI, and emerging technologies.
+        </p>
+        <p>
+          I have completed a 6-month internship at GND Solutions as a JavaScript Developer,
+          gaining hands-on experience in web development, coding, debugging, and
+          problem-solving.
+        </p>
+        <p>
+          Currently, I am interning at Supraja Technologies, where I am gaining practical
+          exposure to cybersecurity mechanisms and real-world security practices, including
+          network security, vulnerability assessment, penetration testing, and security tools.
+        </p>
+        <p>
+          I enjoy learning new technologies, working on practical projects, and continuously
+          improving my technical skills. I look forward to opportunities that help me gain
+          experience, contribute to meaningful projects, and grow in the field of AI,
+          technology, and Cybersecurity.
+        </p>
+      </div>
     </div>
   </div>
 </section>
